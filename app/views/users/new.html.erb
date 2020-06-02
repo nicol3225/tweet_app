@@ -1,18 +1,18 @@
 <div class="main users-new">
   <div class="container">
-    <h1 class="form-heading">新規登録</h1>
+    <h1 class="form-heading">CREATE NEW USER</h1>
     <%= form_tag("/users/create", multipart: true) do %>
      <div class="form">
        <div class="form-body">
-         <p>ユーザー名</p>
+         <p>USER_NAME</p>
          <input name="name"></input>
-         <p>プロフィール画像</p>
+         <p>PROFILE_IMAGE</p>
          <input name="image" type="file">
-         <p>メールアドレス</p>
+         <p>E-MAIL</p>
          <input name="email"></input>
-         <p>パスワード</p>
+         <p>PASSWORD</p>
          <input type="password" name="password"></input>
-         <input type="submit" value="登録">
+         <input type="submit" value="SUBMIT">
        </div>
      </div>
     <% end %>
