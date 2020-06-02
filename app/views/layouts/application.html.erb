@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TweetApp</title>
+    <title>Tweets</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,12 +12,12 @@
   <body>
     <header>
       <div class="header-logo">
-        <%= link_to("TweetApp", "/")%>
+        <%= link_to("Tweets", "/")%>
       </div>
       <ul class="header-menus">
       <% if session[:user_id] == nil %>
         <li>
-        <%= link_to("About TweetApp", "/about")%>
+        <%= link_to("About Tweets", "/about")%>
         </li>
         <li>
         <%= link_to("CREATE USER", "/users/new")%>
